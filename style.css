@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #ae9cff;
+}
+
+.box-container{
+    background-color: aliceblue;
+    color: black;
+    max-width: 25rem;
+    max-height: 40rem;
+    margin: 2rem auto;
+    box-shadow: 0.5rem 0.5rem 1rem black;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+
+.box-container .search-box{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.box-container .search-box input{
+    font-size: 1.2rem;
+    width: 70%;
+    border-bottom: 0.1rem solid #ae9cff;
+}
+
+.box-container .search-box button{
+    border: 0.1rem solid #ae9cff;
+    border-radius: 0.5rem;
+    padding:0.1rem 0.8rem;
+    font-size:1rem ;
+    box-shadow: 0.1rem 0.2rem 0.4rem #ae9cff;
+}
+
+.box-container .search-box button:hover{
+    transform: scale(1.1);
+}
+
+.box-container2{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.box-container2 .word-box{
+    display: flex;
+    gap: 1rem;
+   
+}
+
+.box-container2 .word-box span{
+    padding: 0.3rem 0.5rem;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.box-container2 .empty{
+    height: 0.01rem;
+    background-color: #3f3f3f43;
+}
+
+.box-container2 .dict h3{
+    color: #000000c4;
+    font-weight: 500;
+}
+
+.box-container2 .dict p{
+    font-size: 0.7rem;
+}
+
+.box-container2 .meaning-box .word-box h3{
+    color:#000000c4;
+    font-weight: 500;
+}
+
+.box-container2 .meaning-box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.box-container2 .meaning-box .word-box2{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.box-container2 .meaning-box .word-box2>p{
+    font-size: 0.8rem;
+}
+
+.box-container2 .meaning-box .word-box2 .box{
+    margin-top: 0.6rem;
+    padding: 0.5rem;
+    border: 0.01rem solid #3f3f3f43;
+    border-radius: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:250px){
+    html{
+        font-size: 55%;
+    }
+}
