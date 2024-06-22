@@ -27,6 +27,7 @@ btn.addEventListener('click',async function(){
         <div class="empty"></div>
         
         <div class="meaning-box">
+        
             <div class="word-box">
                 <span onclick="playSound()"><i class="fa-solid fa-volume-high"></i></span>
                 <h3 class="word">${dataArr[0].word}</h3>
@@ -42,11 +43,13 @@ btn.addEventListener('click',async function(){
                         </div>
                     </li>
                 </ol>
-           </div>`
+           </div>
+
+        </div>`  
          sound.setAttribute('src',`${dataArr[0].phonetics[1].audio}`)
         }
         catch{
-            box.innerHTML=`<h3> Couldn't Find The Word </h3>`
+            box.innerHTML=`<h4 style="font-size:2rem;"> Couldn't Find The Word </h4>`
         }
 })
 
